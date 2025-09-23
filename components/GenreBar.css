@@ -1,0 +1,11 @@
+.genres { display:flex; flex-wrap:wrap; gap:8px; margin: 8px 0 14px; }
+.chip {
+  padding: 6px 10px; border-radius: 999px; border: 1px solid #dadada;
+  background:#fff; cursor:pointer; font-size: 13px;
+}
+.chip:hover { background:#f4f4f4; }
+.chip.active { background:#111; color:#fff; border-color:#111; }
+@media (prefers-color-scheme: dark){
+  .chip { background:#16181d; color:#ddd; border-color:#2a2a2a; }
+  .chip.active { background:#fff; color:#111; }
+}

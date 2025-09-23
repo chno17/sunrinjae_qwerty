@@ -1,0 +1,45 @@
+.banner{
+  position:relative;
+  width:100%;
+  aspect-ratio:21/9;              /* 와이드 배너 비율 */
+  margin:18px 0 10px;
+  border-radius:16px;
+  overflow:hidden;
+  /* 기본 그라데이션 배경 */
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+}
+
+/* 배경 이미지 레이어 */
+.banner__bg{
+  position:absolute; inset:0;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  opacity:.35;                    /* 투명도 */
+  filter:saturate(110%);          /* 살짝 색감 보정 */
+  pointer-events:none;            /* 클릭 차단 */
+}
+
+/* 내용(텍스트/버튼) 정중앙 */
+.banner__panel{
+  position:relative; z-index:1;
+  height:100%;
+  display:flex; flex-direction:column;
+  align-items:center; justify-content:center;
+  text-align:center; color:#fff;
+  text-shadow:0 2px 12px rgba(0,0,0,.45);
+}
+.banner__title{ margin:0 0 16px; font-size:clamp(20px,3vw,32px); }
+.banner__btn{
+  display:inline-block; padding:12px 20px; border-radius:10px;
+  text-decoration:none; font-weight:800; background:#ff6b6b; color:#fff;
+}
+.banner__btn:hover{ opacity:.92; }
+
+/* 도트 */
+.banner__dots{
+  position:absolute; left:50%; bottom:12px; transform:translateX(-50%);
+  display:flex; gap:8px; z-index:1;
+}
+.dot{ width:12px; height:12px; border-radius:50%; background:rgba(255,255,255,.6); cursor:pointer; }
+.dot.active{ background:#fff; }

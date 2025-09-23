@@ -1,0 +1,5 @@
+.fav{
+  border:none; background:transparent; cursor:pointer;
+  font-size:20px; line-height:1; color:#f5c518;
+}
+.fav.on { filter: drop-shadow(0 0 4px rgba(245,197,24,.6)); }

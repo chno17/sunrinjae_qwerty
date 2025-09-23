@@ -1,0 +1,26 @@
+.nav {
+  position: sticky; top: 0; z-index: 1000;
+  background: #0f1115; color: #eaeaea; border-bottom: 1px solid #222;
+}
+.nav__inner {
+  max-width: 1080px; margin: 0 auto; height: 64px;
+  display: flex; align-items: center; gap: 16px; padding: 0 16px;
+}
+.nav__brand {
+  font-weight: 800; font-size: 20px; cursor: pointer; white-space: nowrap;
+}
+.nav__links { display: flex; gap: 10px; }
+.link { color: #cfcfcf; text-decoration: none; padding: 8px 10px; border-radius: 8px; }
+.link.active, .link:hover { background: #1a1d25; color: #fff; }
+
+.nav__search { margin-left: auto; display: flex; gap: 8px; }
+.nav__input {
+  height: 36px; min-width: 220px; padding: 0 12px;
+  border-radius: 10px; border: 1px solid #333; background: #141721; color: #eaeaea;
+}
+.nav__input:focus { outline: none; border-color: #555; }
+.nav__go {
+  height: 36px; padding: 0 12px; border-radius: 10px; border: 1px solid #333;
+  background: linear-gradient(45deg, #ff6b6b, #feca57); color: #111; font-weight: 800; cursor: pointer;
+}
+.nav__go:hover { opacity: .92; }
